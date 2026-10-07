@@ -1,5 +1,9 @@
 # Markets
 
+A plugin for [Mazapan](https://mazapan.dev), listed in its [plugin registry](https://mazapan.dev/plugins/markets/).
+
+![The watchlist and a 4-hour chart](media/panel.webp)
+
 Crypto and stocks at a glance, with their trend, for traders who watch the
 same symbol in several timeframes.
 
@@ -34,3 +38,31 @@ symbols are fetched every `refresh_seconds`; the rest only while the panel
 is open. Your lists are in `~/.local/state/mazapan-markets/watchlist.json`.
 
 Not investment advice; data can be delayed.
+
+## Install
+
+In Mazapan, the Plugins panel (`SUPER + SHIFT + P`) lists it under the
+community's: its page shows what it can do before you install it. Or:
+
+```sh
+mazapan plugins add markets
+mazapan apply
+```
+
+Updates come through the registry: `mazapan plugins update markets`, or the
+Updates panel, asking again only for anything new it would be able to do.
+
+## Develop
+
+```sh
+git clone https://github.com/rick-dev-creator/mazapan-markets
+mazapan plugins dev mazapan-markets     # applied again on every save
+mazapan plugins check mazapan-markets   # every theme, every language, before a release
+```
+
+A release is a tag, `vX.Y.Z`, the same as `version` in plugin.toml; the
+registry lists it once it passes its checks.
+
+## License
+
+MIT

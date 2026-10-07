@@ -1,11 +1,19 @@
 [plugin]
 id = "markets"
 name = "Markets"
-version = "0.1.0"
+version = "0.2.0"
 api = 1
 description = "Crypto and stock prices with trend charts: a watchlist where each symbol has its own timeframe (BTC 4H, BTC 1W, SOL 1D), the top 20 coins, your stocks, and a ticker in the bar"
 requires = ["shell-bar", "hypr-base"]
 categories = ["panel", "bar"]
+author = "rickdev"
+homepage = "https://github.com/rick-dev-creator/mazapan-markets"
+license = "MIT"
+
+# How it looks, for the plugin gallery (mazapan.dev/plugins).
+[gallery]
+icon = "media/icon.svg"
+screenshots = ["media/panel.webp"]
 
 [settings]
 # Opens the Markets panel.
